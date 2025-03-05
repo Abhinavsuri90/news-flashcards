@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium News Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <div>
+            <h1>News Flashcards</h1>
+            <p class="last-updated" id="lastUpdated"></p>
+        </div>
+        <input type="text" class="search-bar" placeholder="Search news...">
+    </div>
+</header>
+
+<div class="container"></div>
+    <div class="intro-text">
+        <p><strong>Stay ahead</strong> with the latest headlines from multiple sources. Powered by <strong>NewsAPI</strong> & <strong>GNews</strong>.</p>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" data-category="general">All</button>
+        <button class="filter-btn" data-category="technology">Technology</button>
+        <button class="filter-btn" data-category="business">Business</button>
+        <button class="filter-btn" data-category="science">Science</button>
+        <button class="filter-btn" data-category="health">Health</button>
+    </div>
+
+    <div id="loading" class="loading">Fetching latest news...</div>
+    <div class="news-grid" id="newsGrid"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
